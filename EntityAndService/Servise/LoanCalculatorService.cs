@@ -10,7 +10,7 @@ namespace EntityAndService.Entity
         {
             double P = interestRate / 100 / 12;
 
-            double shareOfTheInterestRate = Math.Pow((1 + P), interestRate);
+            double shareOfTheInterestRate = Math.Pow((1 + P), NumberOfMonths);
 
             double AmountOfPayment = sumCredit * (P + (P / (shareOfTheInterestRate - 1)));
 
